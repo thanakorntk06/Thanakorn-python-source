@@ -1,0 +1,10 @@
+score = []
+for i in range(5):
+    x = int(input("Enter score of student"  + str(i + 1) + ":"))
+    score.append(x)
+print()
+for i in range(5):
+    if score[i] >=50:
+        print("Student", i + 1, ":"score[i], "-> ผ่่าน")
+    else :
+        print("Student", i + 1, ":"score[i], "-> ไม่ผ่าน")
