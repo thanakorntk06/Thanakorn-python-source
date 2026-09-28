@@ -1,0 +1,21 @@
+def deposit(money):
+    balance = 1000
+
+    if money < 0 :
+        raise ValueError("จำนวนเงินฝากต้องมากกว่า 0 ")
+    
+    balance = balance + money
+    return balance
+
+try :
+    money = float(input("รายการฝากเงินที่ต้องการ :"))
+    balance = deposit(money)
+
+except ValueError as e:
+    print(e)
+
+else:
+    print(f"ยอดเงินคงเหลือ : {balance:.2f} บาท")
+
+finally:
+    print("สิ้นสุดการทำรายการ")
